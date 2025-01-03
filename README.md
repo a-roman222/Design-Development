@@ -9,6 +9,7 @@ This repository is dedicated to developing a complete website based on a single 
 
 ## Screenshot of the Design
 ![haydenmock](https://github.com/user-attachments/assets/db9f9c77-6c4e-4bd2-8058-9e84b3676dd4)
+
 (Reference image)
 
 
