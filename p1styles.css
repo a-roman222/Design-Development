@@ -1,0 +1,302 @@
+/*********************
+    
+    Project 1 Stylesheet
+    Name: Andres Roman
+    Date: February 9, 2023
+    Description: Project #1 - Design to Development 
+
+*********************/
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,
+body,
+section,
+p,
+header,
+nav,
+footer,
+div,
+article,
+aside,
+ol,
+ul,
+li,
+h1,
+h6 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+body {
+    margin: 5px;
+    background-color: #e6e6e6;
+    font-size: 13px;
+}
+hr {
+    border-top: 1px solid rgb(231, 231, 231);
+}
+a {
+    text-decoration: none;
+}
+:root {
+    --main-blue-color: #006699;
+}
+.no-deco {
+	text-decoration: none;
+	color: black;
+	cursor: default;
+}
+.no-deco:hover {
+	transition: none;
+	box-shadow:none;
+	color: black;
+}
+.main-blue-color {
+    color: var(--main-blue-color);
+}
+.black-color {
+    color: black;
+}
+.text-bold {
+    font-weight: 600;
+}
+.clear {
+    clear: both;
+}
+.is-flex {
+    display: flex;
+}
+.no-list-style {
+    list-style-type: none;
+}
+nav ul {
+    display: flex;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+header nav {
+    padding-bottom: 4px;
+}
+header li {
+    color: var(--main-blue-color);
+	padding: 0 5px 0 5px;
+}
+header li a {
+    color: var(--main-blue-color);
+	transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
+}
+header li a:hover {
+	box-shadow: inset 100px 0 0 0 #54b3d6;
+	color: white;
+}
+a {
+    color: var(--main-blue-color);
+	transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
+}
+a:hover {
+	box-shadow: inset 300px 0 0 0 #54b3d6;
+	color: white;
+}
+a:focus {
+	color: #993300;
+}
+.button:hover {
+	cursor: pointer;
+	color: var(--main-blue-color);
+}
+.button:focus {
+	color: #993300;
+}
+.strong-blue {
+    color: var(--main-blue-color);
+    font-weight: 600;
+}
+#about-txt {
+    padding-left: 20px;
+}
+#about-txt li a {
+    color: var(--main-blue-color);
+    font-weight: 600;
+    line-height: 3;
+}
+#about-txt li a:focus {
+	color: #993300;
+}
+#search-btn {
+    background-color: #dadada;
+    border: 1px solid gray;
+    padding: 1px 15px;
+    margin-left: 5px;
+}
+#search-nav {
+    display: flex;
+    padding-bottom: 7px;
+}
+#space-banner {
+    position: relative;
+    background-image: url("images/headerBackground.jpg");
+    height: 195px;
+    background-size: 100% 195px;
+    color: white;
+    padding: 25px 10px;
+}
+#space-title {
+    font-size: 30px;
+	letter-spacing: 5px;
+    padding: 10px;
+}
+#space-subtitle {
+    position: absolute;
+	font-style: italic;
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 2px;
+    right: 20px;
+    bottom: 10px;
+    padding: 5px 10px;
+}
+nav ul {
+    justify-content: center;
+}
+#main-menu {
+    background-color: transparent;
+}
+#main-menu ul {
+    background: rgb(12, 110, 161);
+    background: linear-gradient(0deg, rgba(12, 110, 161, 1) 0%, rgba(153, 204, 255, 1) 100%);
+    height: 27px;
+	align-items: center;
+}
+#main-menu ul li {
+    background-color: transparent;
+    padding: 0 5px;
+}
+#main-menu ul li a {
+    background-color: transparent;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+}
+#main-menu ul li:not(:last-child)::after {
+	content: '  |';
+}
+#main-menu ul li a:nth-child(odd):hover {
+	transition: none;
+	box-shadow:none;
+	color: #484848;
+}
+#main-menu ul li a:focus {
+	color: #993300;
+}
+#active-menu-op::before {
+    content: none;
+}
+#active-menu-op {
+    padding-left: 15px !important;
+}
+aside {
+	max-width: 200px;
+    min-width: 195px;
+    padding-bottom: 30px;
+}
+aside ul {
+    list-style: none;
+    padding-bottom: 30px;
+}
+aside ul li {
+	cursor: pointer;
+    background: rgb(205, 204, 203);
+    background: linear-gradient(0deg, rgba(205, 204, 203, 1) 0%, rgba(240, 241, 240, 1) 100%);
+    color: #a2a2a2;
+    border-bottom: 1px solid #b7b7b7;
+    list-style-position: inside;
+    padding-left: 10px;
+    padding-top: 4px;
+    height: 25px;
+}
+aside ul li:hover {
+	background: rgb(205, 204, 203);
+    background: linear-gradient(0deg, rgba(240, 241, 203, 1) 0%, rgba(205, 204, 240, 1) 100%);
+}
+aside ul li:not(:first-child)::before {
+    content: "\2022";
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    width: 18px;
+    margin-left: 2px;
+}
+aside ul li a {
+    color: #484848;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+}
+aside ul li a:focus {
+	color: #993300;
+}
+#nasa-img {
+    float: right;
+    padding-top: 1px;
+}
+#nasa-txt {
+    font-size: 12px;
+    color: grey;
+    line-height: 1.6;
+}
+#right-section {
+    padding: 10px 20px;
+}
+#main-container {
+    padding-bottom: 50px;
+}
+.border-img {
+    float: right;
+    width: 260px;
+    border: solid 1px rgb(161, 159, 159);
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+	margin-left: 10px;
+}
+#text-img {
+    font-size: 11px;
+}
+#nav-dir {
+    float: left;
+    padding-bottom: 30px;
+}
+#nav-dir ul li {
+    font-size: 10px;
+}
+#nav-dir ul li:not(:first-child) {
+    padding-left: 7px;
+}
+footer {
+    flex-direction: column;
+    font-size: 11px;
+    line-height: 1.6;
+    position: relative;
+    bottom: 0;
+}
+footer div {
+    display: flex;
+    justify-content: center;
+}
+footer div ul li {
+    padding: 0 4px;
+}
+footer div ul li a {
+    color: var(--main-blue-color);
+}
+.gray-color {
+    color: #888888;
+}
